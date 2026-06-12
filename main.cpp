@@ -1,5 +1,5 @@
 #include <iostream>
-#include "lab11.h"
+#include "lab13.h"
 
 int main() {
     setlocale(LC_ALL, "");
@@ -23,11 +23,6 @@ int main() {
         }
         case 4: {
             t4();
-            break;
-
-        }
-        case 5: {
-            t5();
             break;
 
         }
