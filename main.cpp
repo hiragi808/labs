@@ -1,12 +1,14 @@
+#include "name.h"
 #include <iostream>
-#include "lab11.h"
-
+#include "person.h"
+#include "point.h"
 int main() {
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "ru_RU.UTF-8");
     std::cout<<"Введите номер задания "<<std::endl;
     int choice;
     std::cin>>choice;
     std::cin.clear();
+    std::cin.ignore(10000, '\n');
     switch (choice) {
         case 1: {
             t1();
@@ -23,11 +25,6 @@ int main() {
         }
         case 4: {
             t4();
-            break;
-
-        }
-        case 5: {
-            t5();
             break;
 
         }
