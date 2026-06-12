@@ -1,12 +1,12 @@
 #include <iostream>
-#include "lab11.h"
-
+#include "tree.h"
 int main() {
     setlocale(LC_ALL, "");
     std::cout<<"Введите номер задания "<<std::endl;
     int choice;
     std::cin>>choice;
     std::cin.clear();
+    std::cin.ignore(10000, '\n');
     switch (choice) {
         case 1: {
             t1();
@@ -20,18 +20,8 @@ int main() {
             t3();
             break;
 
-        }
-        case 4: {
-            t4();
-            break;
-
-        }
-        case 5: {
-            t5();
-            break;
-
-        }
-        default:
+            default:
             std::cout << "неверный выбор!\n";
+        }
     }
 }
