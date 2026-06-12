@@ -1,37 +1,24 @@
+
+
+#include "functions.h"
 #include <iostream>
-#include "lab11.h"
 
 int main() {
-    setlocale(LC_ALL, "");
-    std::cout<<"Введите номер задания "<<std::endl;
+    using namespace std;
+    setlocale(LC_ALL, "RU");
     int choice;
-    std::cin>>choice;
-    std::cin.clear();
-    switch (choice) {
-        case 1: {
-            t1();
-            break;
+    do {
+        cout << "1 - TreeFun2: Список в сбалансированное дерево\n";
+        cout << "2 - TreeFun6: Итератор корень-право-лево\n";
+        cout << "3 - TreeFun10: Пересечение зон камер\n";
+        cout << "0 - ВЫХОД\n";
+        choice = Check::readIntRange("Выбор: ", 0, 3);
+        switch (choice) {
+            case 1: TreeFun2(); break;
+            case 2: TreeFun6(); break;
+            case 3: TreeFun10(); break;
+            case 0: cout << "Выход.\n"; break;
         }
-        case 2: {
-            t2();
-            break;
-        }
-        case 3: {
-            t3();
-            break;
-
-        }
-        case 4: {
-            t4();
-            break;
-
-        }
-        case 5: {
-            t5();
-            break;
-
-        }
-        default:
-            std::cout << "неверный выбор!\n";
-    }
+    } while (choice != 0);
+    return 0;
 }
