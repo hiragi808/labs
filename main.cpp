@@ -1,6 +1,5 @@
 #include <iostream>
-#include "lab11.h"
-
+#include "lb12.h"
 int main() {
     setlocale(LC_ALL, "");
     std::cout<<"Введите номер задания "<<std::endl;
@@ -9,25 +8,20 @@ int main() {
     std::cin.clear();
     switch (choice) {
         case 1: {
-            t1();
+            stl2seq3();
             break;
         }
         case 2: {
-            t2();
+            stl2seq9();
             break;
         }
         case 3: {
-            t3();
+            stl2seq28();
             break;
 
         }
         case 4: {
-            t4();
-            break;
-
-        }
-        case 5: {
-            t5();
+            STL1Iter8();
             break;
 
         }
